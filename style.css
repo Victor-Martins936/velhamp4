@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: texto;
+    src: url(font/Starco.ttf);
+}
+
+@font-face {
+    font-family: jogo;
+    src: url(font/MeetCute.otf);
+}
+
+body {
+    background: url(https://images4.alphacoders.com/592/592367.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+h1 {
+    font-family: texto;
+    text-align: center;
+    font-size: 2.7em;
+    background: rgb(95, 4, 152);
+    background: linear-gradient(310deg, rgba(95, 4, 152, 1) 0%, rgba(154, 1, 167, 1) 35%, rgba(150, 0, 91, 1) 100%);
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 10px;
+}
+
+footer {
+    font-family: texto;
+    position: absolute;
+    bottom: 0;
+    font-size: 2em;
+    background: rgb(95, 4, 152);
+    background: linear-gradient(310deg, rgba(95, 4, 152, 1) 0%, rgba(154, 1, 167, 1) 35%, rgba(150, 0, 91, 1) 100%);
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 40%;
+    padding-right: 37.7%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.board {
+    margin-top: 70px;
+    margin-left: 33%;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 15px;
+}
+
+.cell {
+    font-family: jogo;
+    color: black;
+    text-align: center;
+    padding-top: 37px;
+    background-image: url(https://i.pinimg.com/736x/2c/bd/19/2cbd1995cea2b4c80add4f4c44a11da5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid #a46fd8;
+    align-items: center;
+    font-size: 64px;
+    cursor: pointer;
+}
+
+.img1{
+    position: absolute;
+    top: 22%;
+    width: 400px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.img2{
+    position: absolute;
+    top: 22%;
+    width: 400px;
+    right: 0;
+}
+
